@@ -42,7 +42,7 @@ say $message;
 ```
 You can encrypt (or decrypt) a file :
 ```Perl6
-encrypt-from-file(3, $origin, $destination)
+encrypt-from-file($key, $origin, $destination)
 ```
 This code will encrypt `$origin`'s text into the `$destination` file.
 
