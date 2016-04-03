@@ -36,14 +36,15 @@ say $message;
 ```
 You can decrypt a message :
 ```Perl6
-use v6;
-
-use Text::Cesar;
-
 my Str $secret = 'LPDVHFUHWPHVVDJH'
 my Str $message = decrypt(3, $secret);
 say $message;
 ```
+You can encrypt (or decrypt) a file :
+```Perl6
+encrypt-from-file(3, $origin, $destination)
+```
+This code will encrypt `$origin`'s text into the `$destination` file.
 
 ## Author
 
