@@ -14,7 +14,7 @@ multi sub encrypt(Int $key where 1..25, Str $message) is export {
 
 multi sub encrypt-from-file(Int $key where 1..25, Str $orig, Str $dest) is export {
     die "Can't locate $orig" unless $orig.IO ~~ :e;
-    if $orig ~~ $dest {
+    if $orig eq $dest {
       warn 'Your origin file will be erased !';
     }
     my Str $message = slurp($orig);
@@ -31,7 +31,7 @@ multi sub decrypt(Int $key where 1..25, Str $message) is export {
 
 multi sub decrypt-from-file(Int $key where 1..25, Str $orig, Str $dest) is export {
     die "Can't locate $orig !" unless $orig.IO ~~ :e;
-    if $orig ~~ $dest {
+    if $orig eq $dest {
       warn 'Your origin file will be erased !';
     }
     my Str $message = slurp($orig);
