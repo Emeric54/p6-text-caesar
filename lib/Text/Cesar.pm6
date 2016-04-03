@@ -5,7 +5,7 @@ unit module Text::Cesar;
 my @alphabet = 'A' .. 'Z';
 
 multi sub encrypt(Int $key where 1..25, Str $message) is export {
-    return $message.trans(@alphabet Z=> @alphabet.rotate($key));
+    return ($message).uc.trans(@alphabet Z=> @alphabet.rotate($key));
 }
 
 multi sub encrypt-from-file(Int $key where 1..25, Str $orig, Str $dest) is export {
