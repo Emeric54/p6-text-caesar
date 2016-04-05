@@ -1,10 +1,10 @@
 {
-	"name"        : "Text::Cesar",
+	"name"        : "Text::Caesar",
 	"version"     : "*",
 	"description" : "*",
 	"depends"     : [ ],
 	"provides"    : {
-		"Text::Cesar"         : "lib/Text/Cesarpm6"
+		"Text::Caesar"         : "lib/Text/Caesarpm6"
 	},
-	"source-url"  : "git://github.com/Emeric54/p6-text-cesar.git"
+	"source-url"  : "git://github.com/Emeric54/p6-text-caesar.git"
 }

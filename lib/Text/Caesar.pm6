@@ -1,6 +1,6 @@
 use v6;
 
-unit module Text::Cesar;
+unit module Text::Caesar;
 
 my @alphabet = 'A' .. 'Z';
 

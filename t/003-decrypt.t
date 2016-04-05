@@ -3,7 +3,7 @@ use v6;
 use Test;
 use lib 'lib';
 
-use Text::Cesar;
+use Text::Caesar;
 
 plan 1;
 

@@ -1,11 +1,11 @@
-# Text::Cesar
+# Text::Caesar
 
 ## Synopsis
 
 ```Perl6
 use v6;
 
-use Text::Cesar;
+use Text::Caesar;
 
 my Str $secret = "I'm a secret message.";
 my Str $message = encrypt(3, $secret);
@@ -17,7 +17,7 @@ say $message;
 To install it using Panda (a module management tool bundled with Rakudo Star):
 
 ```
-$ panda install Text::Cesar
+$ panda install Text::Caesar
 ```
 
 ## Description
@@ -28,7 +28,7 @@ You can encrypt a message :
 ```Perl6
 use v6;
 
-use Text::Cesar;
+use Text::Caesar;
 
 my Str $secret = "I'm a secret message.";
 my Str $message = encrypt(3, $secret);

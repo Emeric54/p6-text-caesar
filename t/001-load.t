@@ -5,4 +5,4 @@ use lib 'lib';
 
 plan 1;
 
-use-ok 'Text::Cesar';
+use-ok 'Text::Caesar';
