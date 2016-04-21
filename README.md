@@ -22,7 +22,7 @@ $ panda install Text::Caesar
 
 ## Description
 
-This module allows you to use 4 fonctions.
+This module allows you to use 4 functions.
 
 You can encrypt a message :
 ```Perl6
